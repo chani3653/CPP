@@ -1,5 +1,3 @@
-#include <iostream>
-
 // using namespace std;
 // -> std:: 생략가능
 // 코테만 쓰지 실무에서는 비추
@@ -9,29 +7,25 @@
 
 
 
-namespace first {
-    int a = 10;
+// 다음 C++ 코드에서 빈칸에 들어갈 알맞은 코드를 채우세요.
+#include <iostream>
 
-    int getSum(int a, int b) {
-        return a + b;
+namespace Animal {
+    void sound() {
+        std::cout  << "Animal Sound" << std::endl;
     }
-
-    struct Node {
-        int x, y;
-    };
 }
 
-namespace second {
-    int getSum(int a, int b) {
-        return (a + a + b + b) / 2;
+namespace Dog {
+    void sound() {
+        std::cout  << "Bark" << std::endl;
     }
 }
 
 int main() {
-    int d = first::getSum(3, 4);
-    int g = second::getSum(5, 6);
-
-    first::a = 300;
-
-    return 0;
+    //____::sound()
+    //____::sound()
+    
+    Animal::sound();
+    Dog::sound();
 }
